@@ -121,7 +121,7 @@ def print_json_report(algorithms_results):
 def main():
     """Main function implementing the exact CLI contract from SPEC.md."""
     parser = argparse.ArgumentParser(description="Sorting Algorithms Testing Project")
-    parser.add_argument("--algo", choices=["bubble", "merge", "quick"], required=True,
+    parser.add_argument("--algo", choices=["bubble", "merge", "quick", "insertion", "all"], required=True,
                        help="Algorithm to use")
     parser.add_argument("--report", choices=["text", "json"], default="text",
                        help="Report format (default: text)")
